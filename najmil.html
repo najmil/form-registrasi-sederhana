@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Form Registrasi</h1>
+    <br />
+
+    <form action="proses_najmil.php" method="POST">
+      <fieldset>
+        <legend>Data Mahasiswa</legend>
+        <table>
+          <tr>
+            <td>Nama Mahasiswa</td>
+            <td>: </td>
+            <td><input type="text" name="nama_mhs" value=""> </td>
+          </tr>
+          <tr>
+            <td>NPM Mahasiswa</td>
+            <td>: </td>
+            <td><input type="text" name="npm_mhs" value=""> </td>
+          </tr>
+          <tr>
+            <td>Nomor HP Mahasiswa</td>
+            <td>: </td>
+            <td><input type="tel" name="no_hp" value="" pattern="{+62}[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"> </td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>: </td>
+            <td><select>
+                <option value="pr">perempuan</option>
+                <option value="lk">Laki-Laki</option></td>
+          </tr>
+          <tr>
+            <td>Program Studi</td>
+            <td>: </td>
+            <td> <input type="text" name="prodi" value=""> </td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>: </td>
+            <td><input type="text" name="alamat" value=""> </td>
+          </tr>
+          
+        </table>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Data Mata Kuliah</legend>
+        <table>
+            <tr>
+                <td>Kode Mata Kuliah</td>
+                <td>: </td>
+                <td><input type="text" name="matkul" value=""> </td>
+            </tr>
+            <tr>
+                <td>Nama Mata Kuliah</td>
+                <td>: </td>
+                <td><input type="text" name="nm_matkul" value=""> </td>
+            </tr>
+            <tr>
+                <td>Semester</td>
+                <td>: </td>
+                <td><input type="text" name="semester" value=""> </td>
+            </tr>
+            <tr>
+                <td>Jumlah SKS</td>
+                <td>: </td>
+                <td><input type="text" name="jml_sks" value=""> </td>
+            </tr>
+        </table>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Data Nilai</legend>
+        <table>
+            <tr>
+                <td>Nama Mata Kuliah</td>
+                <td>: </td>
+                <td><input type="text" name="nm_matkul" value=""> </td>
+            </tr>
+            <tr>
+                <td>NPM Mahasiswa</td>
+                <td>: <input type="text" name="npm_mhs" value=""> </td>
+            </tr>
+            <tr>
+                <td>Nilai Mata Kuliah</td>
+                <td>: </td>
+                <td> <input type="text" name="nl_matkul" value=""> </td>
+            </tr>
+        </table>
+      </fieldset>
+      <br>
+      <button type="submit" name="submit">
+        Submit
+    </button>
+    </form>
+  </body>
+</html>
